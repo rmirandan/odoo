@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odoo Web Designer Test | Rodrigo Miranda</title>
+    <!-- bootstrap stuff -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+    <!-- Cuatom css -->
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <div class="container-fluid bg">
+        <!-- Hero Container -->
+        <div class="container ">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-md">
+                <a class="navbar-brand" href="#">
+                    <img src=".\images\odoo-white.svg" height="30" alt="">
+                </a>
+                <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav mx-auto ">
+                        <li class="nav-item active">
+                            <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Pages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">App</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Docs</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Sign In</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-light"><i class="fa fa-shopping-bag" aria-hidden="true"></i> &nbsp;
+                                Buy
+                                Now</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+            <div class="row  d-flex align-items-center section-padding">
+                <div class="col-sm-12 col-md-6 text-white">
+                    <h1 class="title-line-height">Development <br>
+                        done right</h1>
+                    <p>Build a beautiful, modern website with<br /> flexible components built from scratch.</p>
+                    <button class="btn btn-light mt-5 p-3">Get started &nbsp;<i class="fa fa-plus"
+                            aria-hidden="true"></i></button>
+                    <div class="trusted-by-container mt-5">
+                        <small>Trusted by:</small>
+                        <img src="./images/google-white.svg" height="25" />
+                        <img src="./images/spotify-white.svg" height="25" />
+                        <img src="./images/airbnb-white.svg" height="25" />
+                        <img src="./images/paypal-white.svg" height="25" />
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-5 offset-md-1">
+                    <div class="credit-card-section card border-bottom-right p-4 ">
+                        <div class="card-title d-flex justify-content-between align-items-center">
+                            <h6><strong>Manage Cards</strong></h6>
+                            <button class="btn btn-light">Add new</button>
+                        </div>
+                        <div class="card-image-container">
+                            <div class="credit-card">
+                                <div class="credit-card-header d-flex justify-content-between align-items-center">
+                                    <img className="credit-card-logo" src="./images/mastercard.svg" height="25" />
+                                    <span class="badge badge-pill badge-success p-2">Active</span>
+                                </div>
+                                <div class="credit-card-number text-white mt-4">
+                                    <span class="uppercase card-title">Card Number</span><br />
+                                    <span class="credit-card-number-typography">4358 - 7421 - 9256 - 6682</span>
+                                </div>
+                                <div class="date-name-container d-flex  align-items-center text-white mt-2">
+                                    <div class="card-name-section w-50">
+                                        <span class="uppercase card-title">Name</span><br />
+                                        <span class="credit-card-typography">John Snow</span>
+                                    </div>
+                                    <div class="end-date-section w-50">
+                                        <span class="uppercase card-title">Expiry Date</span><br />
+                                        <span class="credit-card-typography">11/23</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End credit Card -->
+                        </div>
+                        <!-- End credit card container -->
+                        <div class="movements-container">
+                            <!-- MOVEMENT ITEM1 -->
+                            <div class="movement-item pt-2 pb-2">
+                                <div class="d-flex justify-content-between align-items-center credit-commerce-text">
+                                    <div class="w-50">
+                                        <strong>Starbucks</strong>
+                                    </div>
+                                    <div class="w-50">
+                                        <strong class="float-right">$5.00 USD</strong>
+                                    </div>
+                                </div>
+                                <small><span class="text-muted">Pending - San Francisco, United
+                                        States</span></small>
+                            </div>
+                            <!-- END MOVEMENT ITEM1 -->
+                            <!-- MOVEMENT ITEM2 -->
+                            <div class="movement-item pt-2 pb-2">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="w-50">
+                                        <strong>Nike Sports</strong>
+                                    </div>
+                                    <div class="w-50">
+                                        <strong class="float-right">$129.00 USD</strong>
+                                    </div>
+                                </div>
+                                <small><span class="text-muted">Pending - Lisbon, Portugal</span></small>
+                            </div>
+                            <!-- END MOVEMENT ITEM2 -->
+                            <div class=" pt-3 pb-2">
+                                <a href="#" class="card-link">View all ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- End Hero Container -->
+    <!-- Product Container -->
+    <div class="container section-padding">
+        <!-- Product section tools  -->
+        <div class="row align-items-center section-padding">
+            <div class="col-md-6 col-xs-12">
+                <div class="product-video" id="img_1_video_thumb">
+                    <button class="btn btn-light">Play Video <i class="fa fa-play" aria-hidden="true"></i></button>
+
+                </div>
+                <div class="card p-4">
+                    <h5>Awesome projects</h5>
+                    <!-- Task1 -->
+                    <div class="task pt-2 pb-2 mt-4">
+                        <div class="d-flex justify-content-between">
+                            <p><strong>Create the new logo</strong></p>
+                            <p class="text-muted ">3:50 <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                        <div class="progress mt-2 mb-2" style="height: 3px;">
+                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <!-- End task 1 -->
+
+                    <!-- Task2 -->
+                    <div class="task pt-2 pb-2 mt-4">
+                        <div class="d-flex justify-content-between">
+                            <p><strong>Set up the color palette</strong></p>
+                            <p class="text-muted ">4:00 <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                        <div class="progress mt-2 mb-2" style="height: 3px;">
+                            <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <!-- End task 2 -->
+
+                    <!-- Task3 -->
+                    <div class="task pt-2 pb-2 mt-4 mb-4">
+                        <div class="d-flex justify-content-between">
+                            <p><strong>Wireframe and prototype</strong></p>
+                            <p class="text-muted ">6:50 <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                        <div class="progress mt-2 mb-2" style="height: 3px;">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <!-- End task 3 -->
+                </div>
+            </div>
+            <div class="col-md-5 offset-md-1">
+                <span class="badge badge-warning text-white yellow-bg">Tools</span>
+                <h2 class="title-line-height mt-4 dark-blue">We build for designers and developers</h2>
+                <p class="text-muted line-height mt-4">Get components and examples, including tons of variables that
+                    will help you grow your business.
+                </p>
+            </div>
+        </div>
+        <!-- End product section features -->
+        <div class="row align-items-center section-padding">
+            <div class="col-xs-12 col-sm-6">
+                <span class="badge badge-info text-white">Features</span>
+                <h4 class="title-line-height mt-4 dark-blue">Get components and examples, including tons of variables that will
+                    help you grow your business.
+                </h4>
+                <div class="check-container pt-4">
+                    <p class="mt-4"> <i class="fa fa-check-square" aria-hidden="true"></i> &nbsp; Perfect for modern
+                        startups</li>
+                    </p>
+                    <p class="mt-4"><i class="fa fa-check-square" aria-hidden="true"></i> &nbsp; Fully customizable and
+                        scalable</li>
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-5 offset-sm-1">
+                <div class="product-video" id="product_image-2">
+                    <button class="btn btn-light">Play Video <i class="fa fa-play" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- Product section Tech -->
+        <div class="row align-items-center section-padding">
+            <div class="col-xs-12 col-sm-6">
+                <div class="tech-section-container d-flex justify-content-between align-items-center">
+                    <div class="w-50">
+                        <!-- Person card -->
+                        <div class="card mr-2">
+                            <div class="img-card"></div>
+                            <div class="p-3 d-flex justify-content-between align-items-center">
+                                <div class="avatar rounded-circle text-white">JH</div>
+                                <div><small><strong>Jimmy Hendix</strong></small></div>
+                                <div><i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Component Card -->
+                        <div class="card mr-2 p-3 mt-4">
+                            <div class="d-flex align-items-center">
+                                <div class="check-icon-container rounded-circle"><i class="fa fa-check"
+                                        aria-hidden="true"></i></div>
+                                <div>
+                                    <strong>300+ components</strong><br>
+                                    <small class="text-muted">Built to be customized.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-50">
+                        <div class="card p-3 ml-2 text-center pb-5 pt-5">
+                            <img src="./images/airbnb.svg" height="30">
+                            <div class="stars-container align-self-center mt-4 mb-4">
+                                <i class="fa fa-star-o star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <h5>4.95 out of 5 stars</h5>
+                            <p class="text-muted">from 23 reviews</p>
+                        </div>
+                        <div class="card ml-2 mt-4 p-3 text-center">
+                            <img class="rounded-circle align-self-center mt-4" src="./images/company_01.png"
+                                height="70">
+                            <h5 class="mt-4 mb-4">Website UI Kit</h5>
+                            <div class="avatars-container d-flex align-self-center">
+                                <img class="rounded-circle" src="./images/person_01.jpg" height="40">
+                                <img class="rounded-circle" src="./images/person_02.jpg" height="40">
+                                <img class="rounded-circle" src="./images/person_03.jpg" height="40">
+                            </div>
+                            <hr>
+                            <div class="icons-container d-flex justify-content-around text-muted mb-4">
+                                <i class="fa fa-file-o" aria-hidden="true"></i>
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xs-12 col-sm-5 offset-sm-1">
+                <span class="badge badge-primary text-white">Technology</span>
+                <h2 class="title-line-height mt-4 dark-blue">We use the latest technologies on the market</h2>
+                <p class="text-muted line-height mt-4 mb-4">Get components and examples, including tons of variables
+                    that will help you grow your business.</p>
+                <strong><a href="#">See case studies</a></strong>
+            </div>
+        </div>
+        <!-- Product section easy to install -->
+        <div class="row align-items-center section-padding">
+            <div class="col-xs-12 col-sm-6">
+                <span class="badge badge-warning text-white">Easy to install</span>
+                <h2 class="title-line-height mt-4">Download, install and run.</h2>
+                <p class="text-muted line-height mt-4">Get components and examples, including tons of variables that
+                    will help you grow your business.</p>
+                <div class="app-badges-container d-flex mt-4">
+                    <img class="app-badge mr-4" src="./images/ios_badge.png" height="60" />
+                    <img class="app-badge ml-4" src="./images/android_badge.png" height="60" />
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="product-video" id="product_image-3">
+                    <button class="btn btn-light">Play Video <i class="fa fa-play" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- Infinite solutions section -->
+        <div class="infinite-solutions-container">
+            <div class="row text-white align-items-center">
+                <div class="col-sm-7 col-xs-12">
+                    <h2>Infinite solutions</h2>
+                    <p>Intuitive markup, powerful and lightning-fast build tools,
+                        everything you need to turn your ideas into incredible products.
+                    </p>
+                </div>
+                <div class="col-sm-5 col-xs-12">
+                    <button class="btn btn-light pull-right">Learn more &nbsp;<i class="fa fa-arrow-right"
+                            aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- awards section -->
+    <div class="container-fluid gray-bg section-padding">
+        <div class="container">
+            <span class="badge badge-primary text-white">Awards</span>
+            <h5 class="title-line-height mt-4">Awards for design, creativity, and innovation on the Internet</h5>
+        </div>
+        <div class="awards-container d-flex justify-content-start mt-5">
+            <!-- Airbnb -->
+            <div class="card card-award p-5  text-center pb-5 pt-5">
+                <img src="./images/airbnb.svg" height="30">
+                <div class="stars-container align-self-center mt-4 mb-4">
+                    <i class="fa fa-star-o star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <h5>4.95 out of 5 stars</h5>
+                <p class="text-muted">from 23 reviews</p>
+            </div>
+            <!-- End airbnbn -->
+
+            <!-- Amazon -->
+            <div class="card card-award p-5  text-center align-items-center">
+                <img src="./images/amazon.svg" height="30">
+                <p class="text-muted  mt-3">
+                    They build modern-looking websites easily using Tabs.
+                </p>
+                <a class="black-link mt-3" href="#">Learn more</a>
+            </div>
+            <!-- End Amazon -->
+            <!-- Slack -->
+            <div class="card card-award p-5  text-center align-items-center">
+                <img src="./images/slack.svg" height="30">
+                <p class="text-muted  mt-3 ">
+                    They build modern-looking websites easily using Trello.
+                </p>
+                <a class="black-link mt-3" href="#">Learn more</a>
+            </div>
+            <!-- End Slack -->
+            <!-- Airbnb -->
+            <div class="card card-award p-5  text-center pb-5 pt-5">
+                <img src="./images/spotify.svg" height="30">
+                <div class="stars-container align-self-center mt-4 mb-4">
+                    <i class="fa fa-star-o star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <h5>4.95 out of 5 stars</h5>
+                <p class="text-muted">from 23 reviews</p>
+            </div>
+            <!-- End airbnbn -->
+            <!-- Slack -->
+            <div class="card card-award p-5  text-center align-items-center">
+                <img src="./images/paypal.svg" height="30">
+                <p class="text-muted  mt-3">
+                    They build modern-looking websites easily using Docker.
+                </p>
+                <a class="black-link mt-3" href="#">Learn more</a>
+            </div>
+            <!-- End Slack -->
+        </div>
+    </div>
+    <!-- End awards section -->
+    <!-- Helpful answers -->
+    <div class="container section-padding">
+        <h2 class="text-center">Helpful answers</h2>
+        <p class="text-muted text-center">Start building fast, beautiful, and modern-looking websites in no time.</p>
+        <div class="row mt-5 pb-5">
+            <div class="col-sm-6 col-xs-12">
+                <!-- Helpful Item 1 -->
+                <div class="card p-4 " data-toggle="collapse" href="#helpfulItem1" role="button" aria-expanded="false"
+                    aria-controls="helpfulItem1">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                            &nbsp;<strong>Which license do I need?</strong>
+                        </div>
+                        <div>
+                            <small class="text-muted"><i class="fa fa-plus" aria-hidden="true"></i></small>
+                        </div>
+                    </div>
+                    <div class="collapse" id="helpfulItem1">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, repudiandae id non in
+                            quo dicta expedita repellat molestias, tenetur libero omnis! Nulla eum sit ex molestiae
+                            recusandae! Dolorem, corporis numquam.
+                        </div>
+                    </div>
+                </div>
+                <!-- End helful Item 1 -->
+                <!-- Helpful Item 2 -->
+                <div class="card p-4 mt-3" data-toggle="collapse" href="#helpfulItem2" role="button"
+                    aria-expanded="false" aria-controls="helpfulItem1">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <i class="fa fa-database" aria-hidden="true"></i>
+                            &nbsp;<strong>How do I get access to my database?</strong>
+                        </div>
+                        <div>
+                            <small class="text-muted"><i class="fa fa-plus" aria-hidden="true"></i></small>
+                        </div>
+                    </div>
+                    <div class="collapse" id="helpfulItem2">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, repudiandae id non in
+                            quo dicta expedita repellat molestias, tenetur libero omnis! Nulla eum sit ex molestiae
+                            recusandae! Dolorem, corporis numquam.
+                        </div>
+                    </div>
+                </div>
+                <!-- End helful Item 2 -->
+                <!-- Helpful Item 3 -->
+                <div class="card p-4 mt-3" data-toggle="collapse" href="#helpfulItem3" role="button"
+                    aria-expanded="false" aria-controls="helpfulItem1">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <i class="fa fa-folder-o" aria-hidden="true"></i>
+                            &nbsp;<strong>How do I see previous orders?</strong>
+                        </div>
+                        <div>
+                            <small class="text-muted"><i class="fa fa-plus" aria-hidden="true"></i></small>
+                        </div>
+                    </div>
+                    <div class="collapse" id="helpfulItem3">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, repudiandae id non in
+                            quo dicta expedita repellat molestias, tenetur libero omnis! Nulla eum sit ex molestiae
+                            recusandae! Dolorem, corporis numquam.
+                        </div>
+                    </div>
+                </div>
+                <!-- End helful Item 3 -->
+
+            </div>
+            <!-- Left column of helpful items -->
+            <div class="col-sm-6 col-xs-12">
+                <!-- Helpful Item 4 -->
+                <div class="card p-4 " data-toggle="collapse" href="#helpfulItem4" role="button" aria-expanded="false"
+                    aria-controls="helpfulItem1">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                            &nbsp;<strong>Which license do I need?</strong>
+                        </div>
+                        <div>
+                            <small class="text-muted"><i class="fa fa-plus" aria-hidden="true"></i></small>
+                        </div>
+                    </div>
+                    <div class="collapse" id="helpfulItem4">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, repudiandae id non in
+                            quo dicta expedita repellat molestias, tenetur libero omnis! Nulla eum sit ex molestiae
+                            recusandae! Dolorem, corporis numquam.
+                        </div>
+                    </div>
+                </div>
+                <!-- End helful Item 4 -->
+                <!-- Helpful Item 5 -->
+                <div class="card p-4 mt-3" data-toggle="collapse" href="#helpfulItem5" role="button"
+                    aria-expanded="false" aria-controls="helpfulItem1">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <i class="fa fa-database" aria-hidden="true"></i>
+                            &nbsp;<strong>How do I get access to my database?</strong>
+                        </div>
+                        <div>
+                            <small class="text-muted"><i class="fa fa-plus" aria-hidden="true"></i></small>
+                        </div>
+                    </div>
+                    <div class="collapse" id="helpfulItem5">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, repudiandae id non in
+                            quo dicta expedita repellat molestias, tenetur libero omnis! Nulla eum sit ex molestiae
+                            recusandae! Dolorem, corporis numquam.
+                        </div>
+                    </div>
+                </div>
+                <!-- End helful Item 5 -->
+                <!-- Helpful Item 6 -->
+                <div class="card p-4 mt-3" data-toggle="collapse" href="#helpfulItem6" role="button"
+                    aria-expanded="false" aria-controls="helpfulItem1">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <i class="fa fa-folder-o" aria-hidden="true"></i>
+                            &nbsp;<strong>How do I see previous orders?</strong>
+                        </div>
+                        <div>
+                            <small class="text-muted"><i class="fa fa-plus" aria-hidden="true"></i></small>
+                        </div>
+                    </div>
+                    <div class="collapse" id="helpfulItem6">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, repudiandae id non in
+                            quo dicta expedita repellat molestias, tenetur libero omnis! Nulla eum sit ex molestiae
+                            recusandae! Dolorem, corporis numquam.
+                        </div>
+                    </div>
+                </div>
+                <!-- End helful Item 6 -->
+            </div>
+        </div>
+        <h5 class="text-center mt-5">I want to start a new project</h5>
+        <div class="d-flex justify-content-center mt-4">
+            <button class="btn btn-primary">Buy Now <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+            <button class="btn btn-light ml-3">Learn more</button>
+        </div>
+
+    </div>
+    <!-- End helpful answers section -->
+    <footer class="container-fluid text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                    <h3>Brilliant solutions for your ideas</h3>
+                    <p>Modern-looking websites.</p>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <div class=" d-flex justify-content-end">
+                    <button class="btn btn-light"><i class="fa fa-file-text-o blue" aria-hidden="true"></i>
+                    &nbsp;Documentation</button>
+                    <button class="btn btn-primary ml-2">
+                    Purchase now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-sm-6 col-xs-12">
+                    <img src="./images/odoo-white.svg" height="30">
+                    <p class="mt-3"><small>
+                        Odoo attempts to bring the best development<br>
+                        experience to designers and developers by offering <br>
+                        the tools needed for having a quick and solid start in <br> most web projects.</small></p>
+                    <div class="d-flex icons-social mt-4">
+                        <i class="fa fa-dribbble" aria-hidden="true"></i>
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-github" aria-hidden="true"></i>
+
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12">
+                            <ul class="nav flex-column ">
+                                <li class="nav-item mb-3">
+                                  <a class="text-white nav-link active"><strong>Account</strong></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="text-white nav-link " href="#">Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="text-white nav-link" href="#">Settings</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="text-white nav-link" href="#">Billing</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="text-white nav-link disabled" href="#">Notifications</a>
+                                </li>
+                              </ul>
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <ul class="nav flex-column ">
+                                <li class="nav-item mb-3">
+                                  <a class="text-white nav-link active"><strong>About</strong></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="text-white nav-link " href="#">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="text-white nav-link" href="#">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="text-white nav-link" href="#">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="text-white nav-link disabled" href="#">Careers</a>
+                                </li>
+                              </ul>
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <ul class="nav flex-column ">
+                                <li class="nav-item mb-3">
+                                  <a class="text-white nav-link active"><strong>Company</strong></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="text-white nav-link " href="#">Community</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="text-white nav-link" href="#">Help Center</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="text-white nav-link" href="#">Support</a>
+                                </li>
+                              </ul>
+                        </div>
+                        </div>
+                </div>
+            </div>
+            <hr class="bg-white" />
+            <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                    <p><strong>© Odoo</strong> All rights reserved </p>
+                </div>
+                <div class="col-sm-6 col-xs-12 d-flex justify-content-end ">
+                    
+                    <a class="text-white mr-2" href="#">Terms</a>
+                    <a class="text-white mr-2" href="#">Privacy</a>
+                    <a class="text-white mr-2" href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<!-- bootstrap stuff -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+<!-- Custom js -->
+<script src="./js/main.js"></script>
+
+</html>
