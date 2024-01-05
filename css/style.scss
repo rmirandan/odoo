@@ -226,8 +226,13 @@ nav {
 		font-size: larger;
 	}
 }
+.stars-container{
+	color: #ccc;
+}
+
+
 .star {
-	color: $yellow;
+	color: $yellow !important;
 }
 .avatars-container {
 	img {
