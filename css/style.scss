@@ -328,6 +328,18 @@ footer{
     color: #038AFF;
 }
 
+.awards-container{
+	.card{
+		transform: scale(1);
+		transition: 0.5s;
+		&:hover{
+			background-color: $gray_bg;
+			transform: scale(1.1);
+			transition: 0.5s;
+		}
+	}
+}
+
 .icons-social{
     font-size: larger;
     i{

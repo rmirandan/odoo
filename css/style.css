@@ -9412,8 +9412,12 @@ nav {
   font-size: larger;
 }
 
+.stars-container {
+  color: #ccc;
+}
+
 .star {
-  color: #FFBE3D;
+  color: #FFBE3D !important;
 }
 
 .avatars-container img {
@@ -9498,6 +9502,16 @@ footer {
 
 .blue {
   color: #038AFF;
+}
+
+.awards-container .card {
+  transform: scale(1);
+  transition: 0.5s;
+}
+.awards-container .card:hover {
+  background-color: #FAFBFF;
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 .icons-social {
